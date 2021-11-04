@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let
+        // x =2;
+        // y=1;
+        // x=y++;
+        // console.log(x,y)
+        // x=++y;
+        // console.log(x,y)
+
+        // let arr=[2,3,5,3,7]
+        // for( let i in arr){
+        //     console.log(arr[i]); ((in))-->index chỉ mục
+        // }
+
+        // for( let x of arr){
+        //     console.log(arr[x]); ((of))--> đóng vtro như biến
+        // }
+
+        // let s = "welcome",str="";
+        // for(let c of s){
+        //     str+= c + "*";
+        // }
+        // console.log(str)
+
+        // let s = "welcome".split("")
+        // console.log(s);
+
+        // function myfunc(name){
+        //     console.log("hi, "+name)
+
+        // }
+        // myfunc("peter");
+
+        // function myfunc(...a){
+            // console.log("hi,"+ a[0]);
+            // console.log("hi,"+ a[1]); --> dài dòng
+            // console.log("hi,"+ a[3]);
+
+    //         for(let i =0; i<a.length;i++){
+    //             console.log("hi," + a[i]);  --> cách 2
+    //         }
+    // }
+    //      myfunc("tom","jery","peter")
+     
+    // function myfunc(){
+    //     console.log(arguments[0]);
+    //     console.log(arguments[1]);
+
+    //     for(let i =0; i < arguments.length;i++){
+    //         console.log("hi," + arguments[i]);
+    //     }
+    // }
+    // myfunc("tom","jery","peter")
+
+    // function myfunc(){
+    //     let s=0
+    //     for(let i=0; i<arguments.length;i++){
+    //         s=s + arguments[i];
+    //     }
+    //     console.log(s)
+    // }
+    // myfunc(3,4,5)
+    // function myfunc2(...a){
+    //     let s=0
+    //     for(let i=0; i<a.length; i++){
+    //         s+=a[i];
+        
+    //     }    
+    //     return s; 
+    // }
+    // console.log(myfunc2(2,3,4))
+
+    //callback function
+    // function say(params){
+    //     params("hello")
+    // }
+    // function callback(params){
+    //     console.log(params);
+    // }
+    // say(callback);
+    // console.log(typeof callback);
+
+
+    function say(name,callback){
+        let s = "hi" + name.toUpperCase();
+        return callback(s);
+    }
+     let rs = say("jonh", function(arg){
+         return arg;
+     })
+     console.log(rs);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

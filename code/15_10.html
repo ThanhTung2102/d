@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box--container{
+            background-color: green;
+            width: 150px;
+            height: 100px;
+            position: relative;
+            z-index: 1;
+        }
+        .box__item--2{
+            background-color:rgba(223, 177, 91, 0.4);
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            z-index: 3;
+            bottom: -30px;
+            left: 30px;
+        }
+        .box__item--3{
+            background-color:red;
+            width: 100px;
+            height: 70px;
+            position: absolute;
+            bottom: 10%;
+            right: 0%;
+            z-index: 2;
+        }
+    </style>
+</head>
+<!-- cách đặt tên class -->
+<!-- BEM:Block__Element--Modifier -->
+<!-- BEM:Block__Element -->
+<!-- BEM:Block--Modifier -->
+<body>
+    <div class="box--container">
+        <div class="box__item--padding box__item--2"></div>
+        <div class="box__item--padding box__item--3"></div>
+    </div>
+
+
+</body>
+</html>

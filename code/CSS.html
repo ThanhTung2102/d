@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+  
+    <style>
+        a:visited{
+            color: red;
+            font-style: italic;
+            
+        }
+        a:hover{
+            font-size: 25px;
+        }
+        p:active{
+            background-color: blue;
+            color: black;
+        }
+        div>p:first-child{
+            font-style: italic;
+        }
+        div>p:last-child{
+            font-weight: bold;
+        }
+        p::selection{
+            color: blueviolet;
+            background-color: cadetblue;
+        }
+        /* thử lại
+        div>p::selection:first-child{
+            color: blueviolet;
+            background-color: cadetblue;
+        } */
+
+    </style>
+</head>
+<body>
+
+<div>
+    <p><a href="https://google.com" target="blank">Lorem</a>, ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatem debitis nihil veniam, aliquam, vero voluptates, alias quisquam nesciunt error inventore voluptate dolorum dignissimos? Dolorem inventore laboriosam perspiciatis dolores quo?</p>
+<p> hello</p>
+    <p> Text22222</p>
+    <p>google</p>
+</div>
+</body>
+</html>

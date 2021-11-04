@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-container{
+            max-width: 600px;
+            background-color: orange;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .form-row{
+            padding: 8px 5px;
+            display: flex;
+            /* justify-content: flex-end; */ 
+        }
+        .form__input{
+            flex: 1;
+        }
+        .form__label{
+            min-width: 80px;
+        }
+        .form__button{
+            margin-left: auto;
+            background-color: initial;
+            border: rgb(82, 55, 6) solid 2px;
+            border-radius: 5px
+        }
+        .form__button:hover{
+            background-color: rgb(71, 49, 6);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="server.html" method="get">
+            <div class="form-row">
+                <label class="form__label" for="username">Username:</label>
+                <input class="form__input" type="text" id="username" name="name" value="iloveuel">
+            </div>
+            <div class="form-row">
+                <label class="form__label" for="email">Email:</label>
+                <input class="form__input" type="text" id="email" name="email" value="iloveuel@uel.edu.vn">
+            </div>
+            <div class="form-row">
+                <input class="form__button" type="submit"
+                name="submit" value="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
